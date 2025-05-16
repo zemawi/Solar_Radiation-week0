@@ -1,6 +1,6 @@
-# Solar Challenge Week 1
+Solar Challenge Week 0
 
-This repository contains the work for the first week's solar data discovery challenge.
+This repository contains the work for the zero week's solar data discovery challenge.
 
 ## Environment Setup
 
@@ -37,4 +37,4 @@ To reproduce the development environment, follow these steps:
     ```bash
     pip install -r requirements.txt
     ```
-    (Currently, `requirements.txt` is empty, but this step is included for future use.)
+    (Currently, `requirements.txt` is empty, but this step is included for future use.).
