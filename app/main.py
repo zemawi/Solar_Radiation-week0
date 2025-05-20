@@ -28,7 +28,7 @@ if uploaded_file is not None:
     metric = st.sidebar.radio("Select Metric", ["GHI", "DHI", "DNI"])
 
     # Summary stats
-    st.subheader(f"📈 Summary Statistics for {metric}")
+    st.subheader(f" Summary Statistics for {metric}")
     st.write(df[metric].describe())
 
     # Boxplot
@@ -43,7 +43,7 @@ if uploaded_file is not None:
     df["Timestamp"] = pd.to_datetime(df["Timestamp"], errors='coerce')
     if "Timestamp" in df.columns:
         df["Timestamp"] = pd.to_datetime(df["Timestamp"])
-        st.subheader(f"🕒 {metric} Over Time")
+        st.subheader(f" {metric} Over Time")
         st.line_chart(df.set_index("Timestamp")[metric])
 
 else:
